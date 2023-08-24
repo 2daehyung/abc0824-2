@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background:#fff;
+        }
+        .navbar {
+            overflow: hidden;
+            background:#333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar a{
+            float:left;
+            font-size:16px;
+            color:#fff;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+        }
+        .dropdown , .dropdown2{
+            float:left;
+            overflow: hidden;
+        }
+        .dropdown .dropbth  , .dropdown2 .dropbth2{
+            font-size:inherit;
+            border:none;
+            outline: none;
+            color:#fff;
+            padding:14px 16px;
+            background:inherit;
+            margin:0;
+        }
+        
+        .navbar  a:hover {
+            background:red;
+        }
+        .dropbth2:hover {
+            background:blue;
+        }
+    .dropdown-content {
+        display:none;
+        position:absolute;
+        background:#f9f9f9;
+        width:100%;
+        top:45px;
+        left:0;
+        box-shadow:0 8px 16px rgba(0,0,0,0.2);
+        z-index: 99;
+    }
+    .lorem-content {
+        display:none;
+        position:absolute;
+        background:#f9f9f9;
+        width:100%;
+        top:45px;
+        left:0;
+        box-shadow:0 8px 16px rgba(0,0,0,0.2);
+        z-index: 99;
+    }
+    .dropdown-content .header {
+        background:red;
+        padding:16px;
+        color:#fff;
+    }
+    .lorem-content .header {
+        background:blue;
+        padding:16px;
+        color:#fff;
+    }
+    .dropdown:hover .dropdown-content {
+        display:block;
+    }
+    .dropdown2:hover .lorem-content {
+        display:block;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown2">
+            <div class="dropbtn2">
+                <a>Home</a>
+            </div>
+            <div class="lorem-content">
+              <div class="header">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum et adipisci aliquid reprehenderit veritatis incidunt nisi! Necessitatibus dolorem recusandae iusto repellendus eaque? Temporibus culpa sapiente illum. Eum, iure similique?</p>
+              </div>   
+            </div>
+          </div> 
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <div class="dropbtn">
+        <a>dropdown</a>
+      <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Mega Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 2</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 3</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>    
+      </div>
+    </div>
+  </div> 
+    </div>
+</body>
+</html>
